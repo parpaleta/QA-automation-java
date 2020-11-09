@@ -34,7 +34,8 @@ public class TestInMathAndString {
 //        2
 //        Сравнете 2 стринга дали са еднакви
         Boolean areTheStringsEqual = string01.equals(string02);
-        String result = (areTheStringsEqual == true ? "The strings are equal!" : "The strings are not equal!");
+        String result = (areTheStringsEqual ? "The strings are equal!" : "The strings are not equal!");
+
         System.out.println(result);
     }
 
