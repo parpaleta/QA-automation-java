@@ -6,13 +6,13 @@ import java.util.List;
 public class MainLecture8hw {
 
     public static void main(String[] agrs){
-        Teacher teacher = new Teacher("Ivanov", 47, "male", "TU Sofia", "Computer science");
+        Teacher teacher = new Teacher("Ivanov", 47, "MALE", "TU Sofia", "Computer science");
         List<String> teacherClasses = new ArrayList<String>();
         teacherClasses.add("Math part 1");
         teacherClasses.add("Math part 2");
         teacherClasses.add("Programming basics Java");
 
-        List<Number> studentsInEachClass = new ArrayList<Number>();
+        List<Integer> studentsInEachClass = new ArrayList<Integer>();
         studentsInEachClass.add(50);
         studentsInEachClass.add(88);
         studentsInEachClass.add(120);
@@ -26,10 +26,10 @@ public class MainLecture8hw {
         teacher.printClasses(teacher.getClasses());
         teacher.studentInTheClasses(160);
         teacher.numberOfStudentsInTheClass(teacherClasses,studentsInEachClass);
-        teacher.toRetire(70, TeachersGenger.male);
-        teacher.toRetire(50, TeachersGenger.male);
-        teacher.toRetire(70, TeachersGenger.female);
-        teacher.toRetire(50, TeachersGenger.female);
+        teacher.toRetire(70, TeachersGenger.MALE);
+        teacher.toRetire(50, TeachersGenger.MALE);
+        teacher.toRetire(70, TeachersGenger.FEMALE);
+        teacher.toRetire(50, TeachersGenger.FEMALE);
 
 
 

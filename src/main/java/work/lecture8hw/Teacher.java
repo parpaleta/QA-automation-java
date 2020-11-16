@@ -15,7 +15,7 @@ public class Teacher extends Person{
     private String faculty;
 
     private List<String> classes;
-    private List<Number> studentsInClass;
+    private List<Integer> studentsInClass;
 
     public Teacher(String name, int age, String maleFemale, String university, String faculty) {
         super(name, age, maleFemale);
@@ -37,16 +37,16 @@ public class Teacher extends Person{
     public void toRetire(int age, TeachersGenger gender){
         String manWoman;
         int yearsToWork;
-        if(gender.equals(TeachersGenger.male)){
+        if(gender.equals(TeachersGenger.MALE)){
             manWoman = "MAN";
             yearsToWork = 68 - age;
         }else{
             manWoman = "WOMAN";
             yearsToWork = 65 - age;
         }
-        if (age > 68 && gender.equals(TeachersGenger.male)){
+        if (age > 68 && gender.equals(TeachersGenger.MALE)){
             System.out.println("You are a " + manWoman + " at age greater than 68 and you need to retire.");
-        }else if(age > 65 && gender.equals(TeachersGenger.female)){
+        }else if(age > 65 && gender.equals(TeachersGenger.FEMALE)){
             System.out.println("You are a " + manWoman + " at age greater than 65 and you need to retire.");
         }else {
 
