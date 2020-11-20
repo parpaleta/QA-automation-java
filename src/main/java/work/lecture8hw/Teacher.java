@@ -49,11 +49,11 @@ public class Teacher extends Person{
         if (age > 68 && gender.equals(TeachersGenger.MALE)){
 //            System.out.println("You are a " + manWoman + " at age greater than 68 and you need to retire.");
 //            log.info("You are a {} at age greater than 68 and you need to retire.", manWoman );
-            log.info("Hello!!!");
+            log.info("Hello!!!!");
         }else if(age > 65 && gender.equals(TeachersGenger.FEMALE)){
 //            System.out.println("You are a " + manWoman + " at age greater than 65 and you need to retire.");
 //            log.info("You are a {} at age greater than 65 and you need to retire.", manWoman );
-            log.info("Hello!!!");
+            log.info("Hello!!!!");
         }else {
 
             System.out.println("You have to work " + yearsToWork + " to retire.");
