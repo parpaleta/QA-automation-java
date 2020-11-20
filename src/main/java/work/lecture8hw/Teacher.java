@@ -2,11 +2,13 @@ package work.lecture8hw;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
 @Getter
 @Setter
+@Slf4j
 
 public class Teacher extends Person{
     private String name;
@@ -45,9 +47,13 @@ public class Teacher extends Person{
             yearsToWork = 65 - age;
         }
         if (age > 68 && gender.equals(TeachersGenger.MALE)){
-            System.out.println("You are a " + manWoman + " at age greater than 68 and you need to retire.");
+//            System.out.println("You are a " + manWoman + " at age greater than 68 and you need to retire.");
+//            log.info("You are a {} at age greater than 68 and you need to retire.", manWoman );
+            log.info("Hello!!!");
         }else if(age > 65 && gender.equals(TeachersGenger.FEMALE)){
-            System.out.println("You are a " + manWoman + " at age greater than 65 and you need to retire.");
+//            System.out.println("You are a " + manWoman + " at age greater than 65 and you need to retire.");
+//            log.info("You are a {} at age greater than 65 and you need to retire.", manWoman );
+            log.info("Hello!!!");
         }else {
 
             System.out.println("You have to work " + yearsToWork + " to retire.");
