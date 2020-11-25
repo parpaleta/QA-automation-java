@@ -53,10 +53,7 @@ public class Main {
             }
 
             if(team.containsKey(teamName) && toDo.equalsIgnoreCase("rating")){
-                int score = 0;
-                for (int i = 0; i <= team1.getListOfPlayers().size() - 1; i++) {
-                    score = team1.calcTeamsRating(team1.getListOfPlayers().get(i));
-                }
+                int score = team1.calcTeamsRating(teamName);
                 log.info("{} - {}", teamName, Integer.toString(score));
             }
         }

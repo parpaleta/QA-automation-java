@@ -48,16 +48,13 @@ public class Team {
         return check;
     }
 
-    public int calcTeamsRating(Player player){
+    public int calcTeamsRating(String teamName){
         int sum = 0;
-        for (Player i : listOfPlayers) {
-            double skill = player.calcPlayersOverallSkill(player);
+
+        for (int i = 0; i <= listOfPlayers.size() - 1;  i++){
+            double skill = this.listOfPlayers.get(i).calcPlayersOverallSkill(this.listOfPlayers.get(i));
             sum += skill;
         }
-//        for (int i = 0; i <= listOfPlayers.size() - 1;  i++){
-//            double skill = player.calcPlayersOverallSkill(player);
-//            sum += skill;
-//        }
         return (int) sum / this.listOfPlayers.size();
     }
 }
